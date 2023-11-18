@@ -1,0 +1,62 @@
+body {
+  background-color: #0d0c1d;
+  font-family: Arial;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+header {
+  background-color: #181f3a;
+  color: white;
+  font-weight: bold;
+  font-size: clamp(8px, 4vw, 14px);
+  text-align: center;
+  margin-top: -5.5%; /* NE DIRAJ PADDING NITI MARGINE */
+  padding-top: 5%;
+  margin-left: -5%;
+  margin-right: -5%;
+  border-bottom: 1px solid #2a3665;
+}
+
+#scoreboard {
+  background-color: #181f3a;
+  color: white;
+}
+
+#naslov {
+  text-align: center;
+  color: white;
+}
+
+#tabela {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  max-width: 1080px;
+  min-height: 200px;
+  margin: 0 auto;
+}
+
+.polje {
+  border: 1px solid black;
+  background-color: #181f3a;
+  padding: 30px;
+  color: #d61f49;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  align-self: center;
+  user-select: none;
+}
+
+.polje:hover {
+  /*background-color: black;*/
+  border: 1px solid white;
+}
+
+.polje:active {
+  transform: translateY(-2px);
+  box-shadow: 5px 10px #d61f49;
+}
